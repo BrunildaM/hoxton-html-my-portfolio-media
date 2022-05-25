@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body{
+  display: grid;
+  grid-auto-flow: row;
+  grid-template:
+    'header' 1fr
+    'projects' auto
+    'experience' auto
+    'footer' 20px;
+}
+
+
+
+header{
+  grid-area: header;
+  background-color:rgb(219, 64, 64);
+  display: grid;
+  padding: 15px;
+}
+.header-menu{
+  display: grid;
+  grid-auto-flow: column;
+  border: 1px solid black;
+  margin-bottom: auto;
+  background-color: #35382e;
+  font-size: 15px;
+  padding: 2px 10px;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 80px 1fr;
+  place-items: end;
+}
+.header-left-menu{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.header-left-menu a{
+  display: grid;
+  grid-auto-flow: column;
+  text-decoration: none;
+  color: white;
+}
+
+.header-right-menu{
+  display: grid;
+  grid-auto-flow: column;
+  gap: 30px;
+  font-size: 11px;
+  padding-bottom: 3px;
+}
+.header-right-menu a{
+  text-decoration: none;
+  color: white;
+}
+
+.header-main{ display: inline-block;
+  border: 1px solid black;
+  margin: 80px 80px;
+  padding: 15px;
+  background-color: 35382e;
+  place-items: center;
+}
+
+.coding {display: grid;
+  float: left;
+  background-image: url(./Media-files/hox.jfif);
+  background-position: 40%;
+
+}
+
+.header-adv h2{
+  display: grid;
+  place-content: center;
+  color: gold;
+}
+
+.header-adv p{
+  padding: 5px;
+  color: white;
+}
+b{
+  color: #00ffff60;
+}
+.arrow{  
+  text-align: center;
+  color: white;
+}
+
+
+
+
+.projects{
+  grid-area: projects;
+  background-color: #ede6e2;
+  
+  display: grid;
+  grid-template: 
+  '. projects-h3 .' 1fr
+  'first-menu second-menu third-menu' auto/
+    auto auto auto;
+  gap: 20px;
+
+ 
+}
+.first-menu{
+  grid-area: first-menu;
+  border: 1px solid black;
+  padding: 20px;
+  margin-left: 150px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.media-news { 
+  display: grid;
+  place-content: center;
+  padding: 0.5rem;
+  background-color: aquamarine;
+  margin: 00.5rem;
+  
+}
+
+.second-menu {
+  grid-area: second-menu;
+  padding: 20px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.media-second {
+  display: grid;
+place-content: center;
+padding: 00.5rem;
+margin: 00.5rem;
+}
+
+.third-menu{
+  grid-area: third-menu;
+  border: 1px solid black;
+  padding: 20px;
+  margin-bottom: 10px;
+  margin-right: 150px;
+  background-color: white;
+}
+
+.media-gmail {
+  display: grid;
+  place-content: center;
+padding: 00.5rem;
+outline: auto;
+margin: 00.5rem;
+}
+
+.projects-h3{
+  grid-area: projects-h3;
+}
+h4{
+  color: rgb(226, 105, 5);
+}
+
+h3{
+  text-align: center;
+  padding-top: 20px;
+}
+
+
+
+
+.experience{
+  grid-area: experience;
+  background-color: #5bc3eb;
+  
+  display: grid;
+  gap: 10px;
+}
+.first-row{
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0px 250px;
+  background-color: white;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 180px 1fr 180px;
+  text-align: center;
+}
+
+.hoxton{
+  margin-right: 00.5cm;
+  place-content: center;
+  outline: auto;
+  outline-color: black;
+}
+
+  
+
+.second-row{
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0px 250px;
+  background-color: white;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 180px 1fr 180px;
+  text-align: center;
+  text-justify: center;
+}
+
+.doublem{ margin-right: 00.5cm;
+  outline: auto;
+  outline-color: black;
+  outline-style: double;
+
+}
+
+.third-row{
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0px 250px;
+  background-color: white;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 180px 1fr 180px;
+  text-align: center;
+  text-justify: center;
+}
+
+.school { margin-right: 0.5cm;
+  outline-color: black;
+  outline-style: auto;
+}
+
+.fourth-row{
+  text-align: center;
+  border: 1px solid black;
+  padding: 10px;
+  margin: 0px 250px;
+  margin-bottom: 50px;
+  background-color: white;
+
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: 180px 1fr 180px;
+  text-align: center;
+}
+
+
+.hr {margin-right: 0.5cm;
+  outline-color: black;
+  outline-style: dotted;
+  
+}
+
+footer{
+  grid-area: footer;
+  background-color: 35382e;
+  color: white;
+  display: grid;
+  place-items: center;
+  font-size: 10px;
+}
+footer a{
+  text-decoration: none;
+  color: white;
+}
